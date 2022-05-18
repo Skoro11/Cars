@@ -5,14 +5,17 @@ body{
 h1{
 font-family: 'Big Shoulders Display', cursive;
 color:hsl(0, 0%, 95%);
+margin-top: 31px;
 }
 .cars p{
   color:hsla(0, 0%, 100%, 0.75);
   font-family: 'Lexend Deca', sans-serif;
+
+    line-height: 24px;
+    word-spacing: -2px;
 }
 .cars{
   display:flex;
-  width:90%;
   margin:50px auto;
 
 }
@@ -20,24 +23,50 @@ color:hsl(0, 0%, 95%);
 background-color:hsl(31, 77%, 52%);
 border-radius:20px 0 0 20px;
 }
+.sedan button{
+  color:hsl(31, 77%, 52%);
+}
 .suv{
   background-color:hsl(184, 100%, 22%);
+}
+.suv button{
+  color:hsl(184, 100%, 22%);
 }
 .luxury{
   background-color:hsl(179, 100%, 13%);
   border-radius:0 20px 20px 0;
 }
+.luxury button{
+  color:hsl(179, 100%, 13%);
+}
 .sedan,.suv,.luxury{
-padding:35px;
+  padding: 37px;
+      width: 222px;
+      min-height: 419px;
+      max-height:auto;
+      padding-top: 48px;
+      padding-left: 47px;
 }
 button{
   background-color:hsl(0, 0%, 95%);
-  padding:10px;
   border-radius:20px;
   border:2px solid white;
   font-family: 'Lexend Deca', sans-serif;
+  padding: 14px 31px;
+    margin-top: 68px;
+    border-radius: 25px;
+    font-size: 15px;
 }
 button:hover{
   background-color:transparent;
   color:hsl(0, 0%, 95%);
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .cars{
+    display:block;
+    
+  }
 }
