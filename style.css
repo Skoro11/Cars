@@ -6,6 +6,7 @@ h1{
 font-family: 'Big Shoulders Display', cursive;
 color:hsl(0, 0%, 95%);
 margin-top: 31px;
+font-size:2.5em;
 }
 .cars p{
   color:hsla(0, 0%, 100%, 0.75);
@@ -17,6 +18,7 @@ margin-top: 31px;
 .cars{
   display:flex;
   margin:50px auto;
+  justify-content:center;
 
 }
 .sedan{
@@ -61,12 +63,18 @@ button:hover{
   background-color:transparent;
   color:hsl(0, 0%, 95%);
 }
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-  .cars{
+@media only screen and (max-width: 375px) {
+  .cars
+  {
     display:block;
-    
+  }
+  .sedan{
+    border-radius:8px 8px 0 0;
+  }
+  .luxury{
+    border-radius:0 0 8px 8px;
+  }
+  .sedan,.suv,.luxury{
+    margin:0 auto;
   }
 }
