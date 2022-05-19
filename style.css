@@ -76,5 +76,10 @@ button:hover{
   }
   .sedan,.suv,.luxury{
     margin:0 auto;
+    height:362px;
+    width:246px;
+  }
+  .button{
+    margin-top:35px;
   }
 }
